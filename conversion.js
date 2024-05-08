@@ -14,8 +14,18 @@ let newScore = Number(score)
 let isLoggedIn = "Rohan"
 
 let  newLoggedIn = Boolean(isLoggedIn)
-console.log(newLoggedIn)
+// console.log(newLoggedIn)
 
 // 1 => true; 0 => false
 // "" => false
 // "Rohan" => true
+
+// console.log("1" + 2 + 2)
+// console.log( 1 + 2 + "2")
+
+// console.log("2" > 1)
+// console.log("02" > 1)
+
+// console.log(null > 0) //false
+// console.log(null == 0) //false
+// console.log(null >= 0) //true 
