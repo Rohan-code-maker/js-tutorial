@@ -24,7 +24,7 @@ const url = "https://hitesh.com/hitesh%20gupta"
 // console.log(url.includes("gupta"))
 
 const sentence = "my name is Rohan Kumar Gupta"
-console.log(sentence.split(" "))
+// console.log(sentence.split(" "))
 
 //Non-Primitive(Reference) Types :- Arrays,Objects,Function
 
@@ -55,3 +55,36 @@ obj2.name = "Rohit"
 
 // console.log(obj.name)
 // console.log(obj2.name)
+
+// **************** Number **************
+const score = 200
+// console.log(score)
+
+const balance = new Number(100)
+// console.log(balance)
+
+// console.log(balance.toString().length)
+// console.log(balance.toFixed(2))
+
+const num = 1123.8947
+// console.log(num.toPrecision(3))
+
+const hundred = 1000000
+// console.log(hundred.toLocaleString('en-IN'))
+
+
+//+++++++++++++++++++ Maths +++++++++++++++++++
+
+// console.log(Math.PI)
+// console.log(Math.abs(-4))
+// console.log(Math.round(3.6))
+// console.log(Math.ceil(4.2))
+// console.log(Math.floor(4.2))
+
+// console.log(Math.random())
+// console.log(Math.floor(Math.random()*10) + 1)
+
+const min = 10
+const max = 20
+
+console.log(Math.floor(Math.random() * (max - min + 1)) + min)
