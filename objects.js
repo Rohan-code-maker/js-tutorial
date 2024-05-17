@@ -47,6 +47,17 @@ const obj3 = {5:"a",6:"b"}
 const obj = {...obj1,...obj2,...obj3}
 // console.log(obj)
 
-console.log(Object.keys(user))
-console.log(Object.values(user))
-console.log(Object.entries(user))
+// console.log(Object.keys(user))
+// console.log(Object.values(user))
+// console.log(Object.entries(user)) 
+
+// ***************Destructuring************
+
+const course = {
+    courseName: "JavaScript",
+    courseID: 123,
+    courseInstructor: "Rohan"
+}
+
+const {courseName:name,courseID,courseInstructor} = course
+console.log(name)
