@@ -35,3 +35,17 @@ function forArray(AnyArray){
 }
 // console.log(forArray(array))
 // console.log(forArray([2,3,4,5]))
+
+
+//******** Inetresting *********
+
+console.log(addOne(5)) // it can be accessed before definition
+function addOne(num){
+    return num+1
+}
+
+//console.log(addTwo(5)) It cannot be accessed before definiton
+const addTwo = function(num){
+    return num+2
+}
+console.log(addTwo(5))
