@@ -86,6 +86,48 @@ const myCoding = [
     },
 ]
 
-myCoding.forEach( (item,index) =>{
-    console.log(item.langName,index)
-})
+// myCoding.forEach( (item,index) =>{
+//     console.log(item.langName,index)
+// })
+
+const num = [1,2,3,4,5,6]
+
+//filter function
+
+// const newNum = num.filter( (item) => {
+//     return item > 4
+// })
+
+// const newNum = num.filter( (item) => item > 4)
+// console.log(newNum)
+
+// const newNum = []
+
+// num.forEach( (item) => {
+//     if(item > 4){
+//         newNum.push(item)
+//     }
+// })
+// console.log(newNum)
+
+//map function
+
+// const newNum = num.map( (item) => item+10)
+// console.log(newNum)
+
+// Chaining functions
+// const newNum = num.map( (item) => item*10).map( (item) => item+1).filter( (item) => item >= 30)
+// console.log(newNum)
+
+//reduce function
+
+const myNums = [1,2,3]
+
+// const total = myNums.reduce(function (accumulator,currentVal){
+//     console.log(`acc:${accumulator} and curval:${currentVal}`)
+//     return accumulator + currentVal
+// },0) // 0 will be the startung value of accumulator
+
+const total = myNums.reduce( (accumulator,currentVal) => accumulator + currentVal,0)
+
+console.log(total)
