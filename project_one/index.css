@@ -1,0 +1,20 @@
+body{
+    background-color: aliceblue;
+    text-align: center;
+}
+.button{
+    height: 50px;
+    width: 50px;
+}
+#grey{
+    background-color: grey;
+}
+#yellow{
+    background-color: yellow;
+}
+#blue{
+    background-color: blue;
+}
+#white{
+    background-color: white;
+}
