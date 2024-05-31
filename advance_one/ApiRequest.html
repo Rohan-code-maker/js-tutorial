@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Api Request</title>
+  </head>
+  <body>
+    <div class="card">
+        <img src="" alt="Avatar" style="width:100%" id="photo">
+        <div class="container">
+          <h4><b id="name"></b></h4>
+          <p>Followers:<span id="followers"></span></p>
+        </div>
+      </div>
+  </body>
+  <script>
+    let photo;
+    let followers;
+    let name;
+    const url = "https://api.github.com/users/hiteshchoudhary";
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", url, true);
+    xhr.onreadystatechange = function () {
+      console.log(xhr.readyState);
+      if (xhr.readyState === 4) {
+        const data = JSON.parse(this.responseText);
+        followers = data.followers;
+        photo = data.avatar_url;
+        name = data.login;
+
+        document.querySelector('#name').innerHTML=name;
+        document.querySelector('#photo').setAttribute('src',photo);
+        document.querySelector('#followers').innerHTML = followers;
+      }
+    };
+    xhr.send();
+  </script>
+</html>
