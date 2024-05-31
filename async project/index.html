@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button id="start">Start</button>
+    </div><br>
+    <div>
+        <button id="stop">Stop</button>
+    </div>
+</body>
+<script>
+    const startButton = document.querySelector('#start');
+    const stopButton = document.querySelector('#stop');
+    let intervalId;
+
+    startButton.addEventListener('click', function(e) {
+        // Check if intervalId is undefined to prevent multiple intervals
+        if (intervalId === undefined) {
+            intervalId = setInterval(function() {
+                console.log(Date.now());
+            }, 1000);
+        }
+    });
+
+    stopButton.addEventListener('click', function(e) {
+        if (intervalId !== undefined) {
+            clearInterval(intervalId);
+            intervalId = undefined; // Reset intervalId
+            console.log('Stopped');
+        }
+    });
+</script>
+</html>
