@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lexical Scope</title>
+</head>
+<body>
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+</body>
+<script>
+    function BgColor(color){
+        return function(){ //return will give scope of outer function too
+            document.body.style.backgroundColor = color
+        }
+    }
+
+    document.getElementById('orange').onclick = BgColor('orange')
+    document.getElementById('green').onclick = BgColor('green')
+
+</script>
+</html>
